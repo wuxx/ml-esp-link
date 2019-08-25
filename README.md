@@ -13,7 +13,7 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 - 使用方便，只需将一个串口工具与目标板相连，PC侧打开串口软件，即可开始开发调试工作
 - 通过web页面进行配置工作，使用PC或者手机打开浏览器即可进行配置
 - 支持最高波特率为460800的无线串口传输
-- 支持无线脱机烧录，可用PC或者手机直接打开浏览器上传固件进行升级，当前支持stm32f1系列的芯片无线烧录
+- 支持无线脱机烧录，和目标单板通过SWD接口连接，可用PC或者手机直接打开浏览器上传固件进行升级，当前支持stm32f1系列的芯片无线烧录
 - 支持固件升级，更多新功能将会陆续支持
 
 
@@ -38,9 +38,11 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 6. 本地断开ESP_XXXXXX wifi热点，连接到wifi路由器，重新使用新的IP打开ml-esp-link  
 ![main_page2](https://github.com/wuxx/ml-esp-link/blob/master/doc/main_page2.png)
 7. 连接成功后，即可开始正常使用，PC侧打开串口工具，推荐使用sscom、putty。打开ml-esp-link的23端口，即可开始正常使用无线串口，也可在网页上的MCU UART菜单中直接使用  
-![sscom](https://github.com/wuxx/ml-esp-link/blob/master/doc/sscom.png)
-![mcu_uart](https://github.com/wuxx/ml-esp-link/blob/master/doc/mcu_uart.png)
+![sscom](https://github.com/wuxx/ml-esp-link/blob/master/doc/sscom.png)  
+在网页端也可以直接使用串口
+![mcu_uart](https://github.com/wuxx/ml-esp-link/blob/master/doc/mcu_uart.png)  
 5. 若需要无线烧录，操作也同样简单，只需上传bin文件，点击 flash the target，观察网页提示，即可正常烧录  
+可检查IDCODE是否正确来判断目标单板是否已经正常连接。
 ![mcu_flash](https://github.com/wuxx/ml-esp-link/blob/master/doc/mcu_flash.png)
 
 # 产品链接
