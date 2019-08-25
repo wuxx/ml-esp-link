@@ -33,7 +33,7 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 3. 推荐以STA模式使用ml-esp-link，若以AP模式使用，则可直接跳过步骤4、5、6  
 4. 切换到wifi station 菜单，将ml-esp-link切换到STA+AP模式  
 ![wifi_station1](https://github.com/wuxx/ml-esp-link/blob/master/doc/wifi_station1.png)
-5. 连接到本地的wifi路由器，连接成功后，会出现新的IP地址  
+5. 连接到本地的wifi路由器，连接成功后，会出现本地路由器分配的新的IP地址  
 ![wifi_station2](https://github.com/wuxx/ml-esp-link/blob/master/doc/wifi_station2.png)
 ![wifi_station3](https://github.com/wuxx/ml-esp-link/blob/master/doc/wifi_station3.png)
 6. 本地断开ESP_XXXXXX wifi热点，连接到wifi路由器，重新使用新的IP打开ml-esp-link  
