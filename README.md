@@ -7,7 +7,7 @@
 * [FAQ](#faq)
     
 # 产品介绍
-ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串口/烧录工具，使用wifi进行无线通信，信号稳定，数据包可靠传输。用户无需额外采购发射机/接收机，仅一个ml-esp-link即可实现无线串口，亦无需配对。ml-esp-link可工作在AP或者STA模式下，，可使用PC或者手机通过网页浏览器进行配置，简单方便。ml-esp-link可实现最高波特率为460800的串口传输，且支持无线脱机烧录，用户只需将编译出的bin文件通过网页上传，即可将固件烧录至目标单板中，可有效产品的研发效率。
+ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串口/烧录工具，使用wifi进行无线通信，信号稳定，数据包可靠传输。用户无需额外采购发射机/接收机，亦无需配对，仅一个ml-esp-link即可实现无线串口。ml-esp-link可工作在AP或者STA模式下，可使用PC或者手机通过网页浏览器进行配置，简单方便。ml-esp-link可实现最高波特率为460800的串口传输，且支持无线脱机烧录，用户只需将编译出的bin文件通过网页上传，即可将固件烧录至目标单板中，可有效产品的研发效率。
 
 # 产品特点
 - 使用方便，只需将一个串口工具与目标板相连，PC侧打开串口软件，即可开始开发调试工作
@@ -27,11 +27,21 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 
 # 使用步骤
 1. 将ml-esp-link和目标单板相接并上电，若为首次上电，ml-esp-link会处于AP模式，此时打开wifi，可发现一个AP热点，名称为ESP_XXXXXX，如下图
+![ap_name](https://github.com/wuxx/ml-esp-link/blob/master/doc/ap_name.png)
 2. 此热点无需输入密码，连接此wifi，连接成功后，在浏览器中输入IP地址 192.168.4.1并回车即可进入ml-esp-link主界面。
-3. 推荐以STA模式使用ml-esp-link，若以AP模式使用，则本地PC需连接到此AP，若本地PC使用无线网络，则连接到此AP之后会导致无法正常上网。STA模式则不存在此问题，可令ml-esp-link连接到本地的wifi路由器。
-
-4. 连接成功后，即可开始正常使用，打开串口工具，推荐使用sscom、putty。打开ml-esp-link的23端口，即可开始正常使用无线串口，也可在网页上的MCU UART菜单中直接使用
+![main_page1](https://github.com/wuxx/ml-esp-link/blob/master/doc/main_page1.png)
+3. 推荐以STA模式使用ml-esp-link，若以AP模式使用，则可直接跳过步骤4、5、6、。
+4. 切换到wifi station 菜单，将ml-esp-link切换到STA+AP模式
+![wifi_station1](https://github.com/wuxx/ml-esp-link/blob/master/doc/wifi_station1.png)
+5. 连接到本地的wifi路由器，连接成功后，会出现新的IP地址
+![wifi_station2](https://github.com/wuxx/ml-esp-link/blob/master/doc/wifi_station2.png)
+6. 本地断开ESP_XXXXXX wifi热点，连接到wifi路由器，重新使用新的IP打开ml-esp-link
+![main_page2](https://github.com/wuxx/ml-esp-link/blob/master/doc/main_page2.png)
+7. 连接成功后，即可开始正常使用，PC侧打开串口工具，推荐使用sscom、putty。打开ml-esp-link的23端口，即可开始正常使用无线串口，也可在网页上的MCU UART菜单中直接使用
+![sscom](https://github.com/wuxx/ml-esp-link/blob/master/doc/sscom.png)
+![mcu_uart](https://github.com/wuxx/ml-esp-link/blob/master/doc/mcu_uart.png)
 5. 若需要无线烧录，操作也同样简单，只需上传bin文件，点击 flash the target，观察网页提示，即可正常烧录。
+![mcu_flash](https://github.com/wuxx/ml-esp-link/blob/master/doc/mcu_flash.png)
 
 # 产品链接
 [ml-esp-link无线串口/烧录工具](https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-21349689053.3.4f8d20f8MryK8Q&id=596673065140)
