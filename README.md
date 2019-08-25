@@ -35,6 +35,7 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 ![wifi_station1](https://github.com/wuxx/ml-esp-link/blob/master/doc/wifi_station1.png)
 5. 连接到本地的wifi路由器，连接成功后，会出现新的IP地址  
 ![wifi_station2](https://github.com/wuxx/ml-esp-link/blob/master/doc/wifi_station2.png)
+![wifi_station3](https://github.com/wuxx/ml-esp-link/blob/master/doc/wifi_station3.png)
 6. 本地断开ESP_XXXXXX wifi热点，连接到wifi路由器，重新使用新的IP打开ml-esp-link  
 ![main_page2](https://github.com/wuxx/ml-esp-link/blob/master/doc/main_page2.png)
 7. 连接成功后，即可开始正常使用，PC侧打开串口工具，推荐使用sscom、putty。打开ml-esp-link的23端口，即可开始正常使用无线串口，也可在网页上的MCU UART菜单中直接使用  
