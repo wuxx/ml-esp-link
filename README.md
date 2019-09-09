@@ -5,6 +5,8 @@
 * [使用步骤](#使用步骤)
 * [产品链接](#产品链接)
 * [FAQ](#faq)
+    * [在Keil中如何生成bin文件？](#q-在keil中如何生成bin文件)
+    * [当前支持哪些目标芯片的无线烧录？](#q-当前支持哪些目标芯片的无线烧录)
     
 # 产品介绍
 ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串口/烧录工具，使用wifi进行无线通信，信号稳定，数据包可靠传输。用户无需额外采购发射机/接收机，亦无需配对，仅一个ml-esp-link即可实现无线串口。ml-esp-link可工作在AP或者STA模式下，可使用PC或者手机通过网页浏览器进行配置，简单方便。ml-esp-link可实现最高波特率为460800的串口传输，且支持无线脱机烧录，用户只需将编译出的bin文件通过网页上传，即可将固件烧录至目标单板中，可有效产品的研发效率。
@@ -50,5 +52,15 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 [ml-esp-link无线串口/烧录工具](https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-21349689053.3.4f8d20f8MryK8Q&id=596673065140)
 
 # FAQ
+### Q: 在Keil中如何生成bin文件？  
+在编译自定义脚本中添加一行
+```
+fromelf --bin -o "$L@L.bin" "$L@L.axf"
+```
+即可在生成hex的同时生成bin文件，如下所示
+![keil_bin](https://github.com/wuxx/ml-esp-link/blob/master/doc/keil_bin.bmp)
+
+### Q: 当前支持哪些目标芯片的无线烧录？
+当前支持STM32F1x系列的所有芯片的烧录，将来会不断测试，增加更多平台的支持，可将您的平台告知我们，我们可优先为您的平台适配。
 
 有任何问题或者建议，请在本仓库的[Issues](https://github.com/wuxx/ml-esp-link/issues)页面中提出，我们会持续跟进解决。
