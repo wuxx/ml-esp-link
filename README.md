@@ -58,7 +58,7 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 fromelf --bin -o "$L@L.bin" "$L@L.axf"
 ```
 即可在生成hex的同时生成bin文件，如下所示
-![keil_bin](https://github.com/wuxx/ml-esp-link/blob/master/doc/keil_bin.bmp)
+![keil_bin](https://github.com/wuxx/ml-esp-link/blob/master/doc/keil_bin.png)
 
 ### Q: 当前支持哪些目标芯片的无线烧录？
 当前支持STM32F1x系列的所有芯片的烧录，将来会不断测试，增加更多平台的支持，可将您的平台告知我们，我们可优先为您的平台适配。
