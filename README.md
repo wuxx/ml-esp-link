@@ -44,7 +44,7 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 ![sscom](https://github.com/wuxx/ml-esp-link/blob/master/doc/sscom.png)  
 在网页端也可以直接使用串口
 ![mcu_uart](https://github.com/wuxx/ml-esp-link/blob/master/doc/mcu_uart.png)  
-5. 若需要无线烧录，操作也同样简单，只需上传bin文件，点击 flash the target，观察网页提示，即可正常烧录  
+5. 若需要无线烧录，操作也同样简单，只需上传bin文件（当前只支持bin文件烧录，将来会支持hex文件烧录，如何将hex文件转换成bin文件请见FAQ），点击 flash the target，观察网页提示，即可正常烧录  
 可检查IDCODE是否正确来判断目标单板是否已经正常连接。
 ![mcu_flash](https://github.com/wuxx/ml-esp-link/blob/master/doc/mcu_flash.png)
 
@@ -61,6 +61,6 @@ fromelf --bin -o "$L@L.bin" "$L@L.axf"
 ![keil_bin](https://github.com/wuxx/ml-esp-link/blob/master/doc/keil_bin.png)
 
 ### Q: 当前支持哪些目标芯片的无线烧录？
-当前支持STM32F1x系列的所有芯片的烧录，将来会不断测试，增加更多平台的支持，可将您的平台告知我们，我们可优先为您的平台适配。
+当前支持STM32F0x和STM32F1x系列的所有芯片的烧录，以及STM32F4x系列部分芯片的烧录，将来会不断开发，增加更多平台的支持，可将您的平台告知我们，我们可优先为您的平台适配。
 
 有任何问题或者建议，请在本仓库的[Issues](https://github.com/wuxx/ml-esp-link/issues)页面中提出，我们会持续跟进解决。
