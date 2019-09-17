@@ -3,6 +3,7 @@
 * [产品特点](#产品特点)
 * [使用场景](#使用场景)
 * [使用步骤](#使用步骤)
+* [LED状态](#led状态)
 * [产品链接](#产品链接)
 * [FAQ](#faq)
     * [在Keil中如何生成bin文件？](#q-在keil中如何生成bin文件)
@@ -47,6 +48,16 @@ ml-esp-link 是缪斯实验室推出的基于esp-link深度定制的的无线串
 5. 若需要无线烧录，操作也同样简单，只需上传bin文件（当前只支持bin文件烧录，将来会支持hex文件烧录，如何将hex文件转换成bin文件请见FAQ），点击 flash the target，观察网页提示，即可正常烧录  
 可检查IDCODE是否正确来判断目标单板是否已经正常连接。
 ![mcu_flash](https://github.com/wuxx/ml-esp-link/blob/master/doc/mcu_flash.png)
+
+# LED状态
+ml-esp-link上有两个led，标记为CON（绿色）和SER（蓝色），分别用来指示WiFi连接状态和串口数据传输状态  
+
+LED | 说明
+---|---
+绿灯1秒闪烁一次 | 当前处于AP+STA模式，正在尝试连接网络
+绿灯2秒闪烁一次 | 当前处于AP模式，未连接网络
+绿灯3秒闪烁一次 | 当前处于AP+STA模式，正在尝试连接网络
+蓝灯闪烁 | 串口正在发送/接收数据
 
 # 产品链接
 [ml-esp-link无线串口/烧录工具](https://item.taobao.com/item.htm?spm=a1z10.1-c-s.w4004-21349689053.3.4f8d20f8MryK8Q&id=596673065140)
